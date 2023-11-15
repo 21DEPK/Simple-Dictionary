@@ -1,0 +1,87 @@
+@font-face {
+  font-family: myFont;
+  src: url("../fonts/SpaceMono-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background-color: #ddd;
+}
+h1 {
+  margin-top: 12px;
+  font-size: 46px;
+  -webkit-text-stroke: 0.6px black;
+  color: transparent;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: myFont;
+}
+.container {
+  padding-top: 3vh;
+  display: flex;
+  width: 85%;
+  margin: auto;
+}
+input {
+  margin-right: 5px;
+  line-height: 24px;
+  flex-grow: 1;
+  padding-left: 5px;
+  border-radius: 2.5px;
+  border: none;
+  font-size: 24px;
+}
+input:focus {
+  outline: none;
+}
+audio {
+  display: none;
+}
+#search {
+  background-image: url("https://media.istockphoto.com/id/519752711/photo/magnifier-glass.jpg?s=612x612&w=0&k=20&c=QaU2HwUuCl61cmcr7Uvevk-DeeuRnfFt3vsft8oAEy0=");
+  background-size: cover;
+  background-position: -1px 0px;
+  height: 34px;
+  width: 30px;
+  border-radius: 4px;
+}
+#searchedword {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.wordsound {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  line-height: 45px;
+  height: 45px;
+  align-items: center;
+  margin: 12px auto;
+}
+#playaudio {
+  line-height: 28px;
+  width: 26px;
+  padding-left: 2px;
+  border: 1px solid;
+  box-shadow: 2px 2px 4px grey inset, -2px -2px 4px grey inset;
+}
+#meaning {
+  position: relative;
+  height: 68vh;
+  max-width: 85%;
+  border-radius: 5px;
+  padding: 8px;
+  margin: auto;
+  background-color: #fff;
+  overflow-y: auto;
+  text-align: justify;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
